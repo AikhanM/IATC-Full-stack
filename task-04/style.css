@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:#fff;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 700px;
+    display: flex;
+  
+}
+.container-left{
+    border-radius: 40px;
+    width: 350px;
+    height: 500px;
+    background:linear-gradient(to bottom,#6642fe,#312ce8);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#result{
+    position: absolute;
+    top:10%;
+}
+.percent{
+    width:170px;
+    height: 170px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom,#4920cb,#4633ed);
+    text-align: center;
+    position: relative;
+}
+.percent h2{
+    position: absolute;
+    left:30%;
+    bottom:40%;
+    font-size: 4rem;
+    color: #fff;
+}
+.container-left p{
+    font-size: 1.3rem;
+    color:#c9c3ff;
+    position: absolute;
+    bottom:20%;
+    left: 35%;
+}
+#great{
+    margin-top: 20px;
+}
+#score{
+    position: absolute;
+    bottom:10%;
+    left:10%;
+}
+.container-right{
+    width: 350px;
+    height: 500px;
+    margin-left: 5%;
+}
+#summary{
+    color:#000;
+    margin-top:14%;
+    margin-bottom: 20px;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.skills p{
+    color:#292c3e;
+}
+.skill{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.skill-left{
+    display: flex;
+    column-gap: 10px;
+}
+.skill-right span{
+    color:grey;
+}
+.Reaction{
+    background-color:#fff6f5;
+}
+.Memory{
+    background-color: #fffbf2;
+}
+.Verbal{
+    background-color: #f2fafa;
+}
+.Visual{
+    background-color: #f3f3fd;
+}
+
+.Reaction p{
+    color:#cf6f6f;
+}
+.Memory p{
+   color:#e3b156;
+}
+.Verbal p{
+    color:#28a98a;
+}
+.Visual p{
+   color:#202a9e;
+}
+.container-right button{
+    margin-top:50px;
+    width: 350px;
+    height: 70px;
+    border-radius: 30px;
+    background-color: #4836f2;
+    border:1px solid #5345cf;
+}
