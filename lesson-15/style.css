@@ -1,0 +1,15 @@
+:root{
+    --primary-color:linear-gradient(to bottom,#f02aa6,#ff6f48);
+    --header-button-color:#13183F;
+    --header-button-active:#666CA3;
+    --footer-button-color:linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    --footer-button-active:linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    --footer-bg-color:#13183F;
+    --button-border-radius:28px;
+}   
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
