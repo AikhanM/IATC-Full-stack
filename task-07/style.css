@@ -52,6 +52,9 @@
     color:#fff;
     margin-bottom: 150px;
 }
+ button:hover{
+    opacity: .8;
+}
 #ios{
     padding:13px 36px;
     background-color: #26BBA4;
@@ -205,17 +208,19 @@
     color: #9EABB2;
 }
 .articles{
+    width: 100%;
+    margin:0 auto;
     margin-top: 100px;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-shrink: 1;
 }
 .article{
-    width: 290px;
+    width:250px;
     height: 350px;
     margin-right: 50px;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
     text-align: center;
 }
@@ -304,7 +309,18 @@
 .social-media img{
     margin-left: 24px;
 }
-
+@media only screen and (max-width: 1185px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-texts .text{
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: center;
+        
+    }
+}
 @media only screen and (max-width: 768px) {
     .header{
         width:100%;
@@ -373,8 +389,10 @@
         left:0%;
     }
     .main-texts{
-        position: relative;
-        right:17%;
+       width: 100%;
+    }
+    .text{
+        margin: 0 5%;
     }
     .text h3{
         font-size: 1.5em;
@@ -403,9 +421,11 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin-top:50px;
     }
     .section-top img{
-        width: 100%;    
+        width: 100%; 
+         
     }
     .section-top h1{
         font-size:2em;
@@ -413,15 +433,26 @@
         letter-spacing: -0.521739px;
         text-align:center;
         width:90%;
+        margin: 0 10%;  
     }
+    
+  
     .section p{
         font-size: 1em;
         line-height: 26px;
         text-align: center;
         letter-spacing: 0.12px;
         width: 100%;
-        position: relative;
-        right: 45%;
+        margin:0 10%;
+        width: 500px;
+    }
+    .section-top p{
+        margin: 0 20%;
+    }
+    .section-bottom p{
+        position: inherit;
+        text-align: center;
+        margin:20px 0;
     }
     .section h3{
         font-size: 1.5em;
@@ -436,9 +467,18 @@
         align-items:center;
         justify-content: center;
         text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .article {
+        margin: 0 auto;
+    }
+    .article>*{
+        display: inline-block;
     }
     .articles p{
         width: 200px;
+        position: static;
     }
     .logos{
         display: flex;
